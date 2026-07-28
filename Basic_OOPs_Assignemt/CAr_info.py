@@ -57,3 +57,35 @@ c3.display_info()
 print()
 
 c4.display_info()
+
+
+
+# === Original Car Details ===
+# Car Brand: Toyota
+# Car Price: ₹ 1500000
+
+# Car Brand: Hyundai
+# Car Price: ₹ 1200000
+
+# Car Brand: Honda
+# Car Price: ₹ 1400000
+
+# Car Brand: Tata
+# Car Price: ₹ 1000000
+
+# Price of Toyota increased by ₹100000
+
+# Price of Tata decreased by ₹50000
+
+# === Updated Car Details ===
+# Car Brand: Toyota
+# Car Price: ₹ 1600000
+
+# Car Brand: Hyundai
+# Car Price: ₹ 1200000
+
+# Car Brand: Honda
+# Car Price: ₹ 1400000
+
+# Car Brand: Tata
+# Car Price: ₹ 950000
