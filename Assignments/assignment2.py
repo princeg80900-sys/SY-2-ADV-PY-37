@@ -1,49 +1,82 @@
 def report_header(func):
-def wrapper(*args, **kwargs):
+  def wrapper(*args, **kwargs):
+    print("=" * 40)
+    print(" STUDENT REPORT")
+    print("=" * 40)
+    result = func(*args, **kwargs)
+    print("=" * 40)
+    return result
 
-print(&quot;=&quot; * 40)
-print(&quot; STUDENT REPORT&quot;)
-print(&quot;=&quot; * 40)
-func(*args, **kwargs)
-print(&quot;=&quot; * 40)
-return wrapper
-
+  return wrapper
 class Report:
-college = &quot;ABC Engineering College&quot;
+  college = "ABC Engineering College"
 
-# Constructor (Magic Method)
-def __init__(self, name, roll, marks):
-self.name = name
-self.roll = roll
-self.marks = marks
+  # Constructor (Magic Method)
+  def __init__(self, name, roll, marks):
+    self.name = name
+    self.roll = roll
+    self.marks = marks
 
-# Class Method
-@classmethod
-def change_college(cls, new_name):
-cls.college = new_name
+  # Class Method
+  @classmethod
+  def change_college(cls, new_name):
+    cls.college = new_name
 
-# Magic Method
-def __str__(self):
-return f&quot;Name : {self.name}\nRoll No : {self.roll}\nMarks : {self.marks}&quot;
+  # Magic Method
+  def __str__(self):
+    return f"Name : {self.name} \nRoll No : {self.roll}\nMarks : {self.marks}"
 
-# Decorator applied to display report
-@report_header
-def display_report(self):
-print(f&quot;College : {Report.college}&quot;)
-print(self)
-if self.marks &gt;= 40:
-print(&quot;Result : PASS&quot;)
-else:
-print(&quot;Result : FAIL&quot;)
+  # Decorator applied to display report
+  @report_header
+  def display_report(self):
+    print(f"College : {Report.college}")
+    print(self)
+    if self.marks >= 40:
+      print("Result : PASS")
+    else:
+      print("Result : FAIL")
+
 
 # Main Program
-student1 = Report(&quot;Rahul&quot;, 101, 85)
-student1.display_report()
+if __name__ == '__main__':
+  student1 = Report("Rahul", 101, 85)
+  student1.display_report()
 
-print()
+  print()
 
-# Change college name using class method
-Report.change_college(&quot;XYZ Institute of Technology&quot;)
+  # Change college name using class method
+  Report.change_college("XYZ Institute of Technology")
 
-student2 = Report(&quot;Priya&quot;, 102, 35)
+  student2 = Report("Priya", 102, 35)
+  student2.display_report()
 student2.display_report()
+
+
+# ========================================
+#  STUDENT REPORT
+# ========================================
+# College : ABC Engineering College
+# Name : Rahul 
+# Roll No : 101
+# Marks : 85
+# Result : PASS
+# ========================================
+
+# ========================================
+#  STUDENT REPORT
+# ========================================
+# College : XYZ Institute of Technology
+# Name : Priya 
+# Roll No : 102
+# Marks : 35
+# Result : FAIL
+# ========================================
+# ========================================
+#  STUDENT REPORT
+# ========================================
+# College : XYZ Institute of Technology
+# Name : Priya 
+# Roll No : 102
+# Marks : 35
+# Result : FAIL
+# ========================================
