@@ -73,3 +73,40 @@ while True:
         continue
 
     payment_method.pay(amount)
+
+
+#     Enter Payment Method 
+#                 1. Credit Card
+#                 2. Debit Card
+#                 3. UPI
+#                 4. Net Banking
+#                 5. Exit 
+#  2
+# Enter the amount to be paid: 456
+# Payment of $456.0 processed using Debit Card.
+# Enter Payment Method 
+#                 1. Credit Card
+#                 2. Debit Card
+#                 3. UPI
+#                 4. Net Banking
+#                 5. Exit 
+#  3
+# Enter the amount to be paid: 7896
+# Payment of $7896.0 processed using UPI.
+# Enter Payment Method 
+#                 1. Credit Card
+#                 2. Debit Card
+#                 3. UPI
+#                 4. Net Banking
+#                 5. Exit 
+#  4
+# Enter the amount to be paid: 5689
+# Payment of $5689.0 processed using Net Banking.
+# Enter Payment Method 
+#                 1. Credit Card
+#                 2. Debit Card
+#                 3. UPI
+#                 4. Net Banking
+#                 5. Exit 
+#  5
+# exit
