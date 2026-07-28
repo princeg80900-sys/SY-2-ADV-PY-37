@@ -1,14 +1,15 @@
-# Decorator
+
 
 def my_decorator(func):
-def wrapper():
-print("Something is happening before the function is called.")
-func()
-print("Something is happening after the function is called.")
-return wrapper
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+    return wrapper
+
 @my_decorator
 def say_hello():
-print("Hello!")
+    print("Hello!")
+
 say_hello()
 
 # Iterator
@@ -21,18 +22,34 @@ print(next(my_iter))
 
 # Generator
 def countdown(n):
-while n > 0:
-yield n
-n -= 1
+    while n > 0:
+        yield n
+        n -= 1
 
 for num in countdown(5):
-print(num) 
+    print(num) 
 
 # Closures
 
 def outer_func(x):
-def inner_func(y):
-return x + y
-return inner_func
+    def inner_func(y):
+        return x + y
+    return inner_func
+
 add_five = outer_func(5)
 print(add_five(3)) 
+
+
+# OUTPUT :
+# Something is happening before the function is called.
+# Hello!
+# Something is happening after the function is called.
+# 1
+# 2
+# 3
+# 5
+# 4
+# 3
+# 2
+# 1
+# 8
