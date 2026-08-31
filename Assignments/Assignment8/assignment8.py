@@ -15,3 +15,9 @@ with open("output.txt", "w") as file:
     file.writelines(first_two_lines)
 
 print("First two lines have been written to output.txt")
+
+
+# OUTPUT : 
+
+# Total number of lines: 4
+# First two lines have been written to output.txt
