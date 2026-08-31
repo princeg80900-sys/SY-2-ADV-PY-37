@@ -1,0 +1,4 @@
+This is Prince Gupta learning APP.
+Today I code for file handling in APP.
+As Python supports file handling.
+It has multiple libraries regarding that.
