@@ -40,3 +40,18 @@ library.add_book(b1)
 library.add_book(b2)
 
 library.display_books()
+
+# OUTPUT:
+#---------------
+# Book ID: 1
+# Title: Python
+# Author: Guido
+# Price: 1200
+# Category: Premium
+# ----------------
+# Book ID: 2
+# Title: C Programming
+# Author: Dennis
+# Price: 500
+# Category: Standard
+# ----------------
