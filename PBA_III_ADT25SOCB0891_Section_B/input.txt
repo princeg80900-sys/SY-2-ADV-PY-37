@@ -1,8 +1,0 @@
-Python is easy to learn.
-Java is also popular.
-Python supports file handling.
-C is programming languge.
-Keyword
-Python
-Cython
-write a python programme using pandas and matplotlib toanalyze monthly sales data stored in sales.csv 1. read csv fle in data frame 2. display total average sales 3.identify the monthly highest sales 4. group sales by product category 5. generate bar chart comparing sales across product categories 6. generate a line chart showing monthly sales trends. 7. generate a pie chart showing the percentage contribution of each product catogory to total sales     all data is in sales. csv
